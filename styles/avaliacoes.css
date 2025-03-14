@@ -1,0 +1,116 @@
+#avaliacoes {
+    min-height: cal(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    gap: 48px;
+
+    background-color: var(--lightest-blue);
+}  
+
+.imagem-avaliacoes {
+    height: 40rem;
+    width: auto;
+    border-radius: 3rem;
+}
+
+#avaliacoes_container {
+    background-color: var(--background-color);
+    padding: 3rem;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#feedbacks_container {
+    background-color: var(--lightest-blue);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 12px 4px rgba (0, 0, 0, 0.1);
+
+}
+
+.feedback-card > img {
+    height: 3rem;
+    width: auto;
+    object-fit: cover;
+}
+
+#feedback_content p {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text-color);
+}
+
+#feedback_content p span {
+    color: var(--secondary-blue-color);
+
+}
+
+#feedback_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.comentario-avaliacoes {
+    color: var(--primary-details);
+}
+
+@media screen and (max-width: 1170px) {
+    #avaliacoes {
+        flex-direction: column;  
+    }
+
+    #avaliacoes_container .subtitulo-card {
+        text-align: center;
+    }
+
+    #avaliacoes_container {
+        background-color: var(--main-background-color);
+    }
+    
+
+    .imagem-avaliacoes {
+        display: none;
+    }
+
+    #feedback_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #avaliacoes_container .subtitulo-card {
+        font-size: 2rem;
+    }
+
+    #feedback_content {
+        width: 100%;
+    }
+
+    .feedbacks_container {
+        flex-direction: column;
+    }
+
+}

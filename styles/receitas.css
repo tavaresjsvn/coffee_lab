@@ -1,0 +1,98 @@
+#receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+#cabecalho_receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pre-titulo {
+    color: var(--grey);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 2.7rem;
+}
+
+.subtitulo-card {
+    color: var(--grey) ;
+    padding-bottom: 6rem;
+}
+
+#cards_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+   justify-content: center;
+}
+
+.card {
+    background-color: var(--lightest-blue);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 42.5%;
+}
+
+.header-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    background-color: var(--lightest-blue);
+}
+
+.imagem-autor {
+    width: 1.5rem;
+    border-radius: 20rem;
+}
+
+.lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pretitulo-card {
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.titulo-card {
+    color: var(--main-text-color);
+}
+
+.nota-card {
+    color: var(--secondary-blue-color);
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nome-autor {
+    color: var(--grey);
+}
+
+.descricao-container {
+    background-color: var(--main-background-color);
+    padding: 3rem;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.texto-card {
+    color: var(--main-text-color);
+}

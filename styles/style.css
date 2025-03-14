@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('home.css');
+@import url('header.css');
+@import url('menu.css');
+@import url('avaliacoes.css');
+@import url('receitas.css');
+@import url('footer.css');
+
+:root {
+    --main-background-color: #efeee8;
+    --main-text-color: #2c4380;
+    --secondary-blue-color: #899fb1;
+    --primary-details: #7c7484;
+    --lightest-blue: #d3dae0;
+    --grey: #807f7b;
+    --lightest-grey: #e5e8ea;
+    --background-color: #abb6d5;
+}
+
+* {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+section{
+    padding: 28px 8%;
+}
+
+span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao-padrao {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: backgroud-color .3s ease;
+}
+
+.botao-padrao:hover {
+    background-color: var(--secondary-blue-color);
+}
+
+.titulo-sessao {
+    color: var(--main-text-color);
+    padding-bottom: 1rem;
+}
+
+.subtitulo-sessao {
+    color: var(--primary-details);
+    padding-bottom: 4rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 50px;
+    padding-top: 1rem;
+}
+
+.social-media a {
+    color: var(--primary-details);
+    font-size: 1.25rem;
+}
+
+.social-media a:hover {
+    background-color:var(--lightest-grey);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

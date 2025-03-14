@@ -1,0 +1,102 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+    border-radius: 7rem;
+}
+
+#bebidas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.cafes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--lightest-grey);
+    position: relative;
+    overflow: hidden;
+}
+
+.coracao-icone {
+    position: absolute;
+    background-color: var(--lightest-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--primary-details);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 0px 0px 39px;
+}
+
+.coracao-icone i:hover {
+    color: var(--secondary-blue-color);
+    cursor: pointer;
+}
+
+.cafe-imagem {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.titulo-cafe {
+    color: var(--main-text-color);
+}
+
+.cafe-descricao {
+    color: var(--primary-details);
+    text-align: center;
+}
+
+.cafe-nota {
+    color: var(--secondary-blue-color);
+}
+
+.cafe-preco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cafe-preco h4 {
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width: 1170px) {
+    #bebidas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cafes {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cafes {
+        width: calc(100% - 12px);
+    }
+
+    #menu .subtitulo-sessao {
+        text-align: center;
+    }
+}

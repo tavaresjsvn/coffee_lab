@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Lab</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="barra_navegacao">
+            <div id="logo_container">
+                <img src="/assets/coffee_maker_icon.svg" alt="ícone de máquina de café">
+                <span>Coffee Lab</span>
+            </div>
+
+            <ul id="lista_barra_navegacao">
+                <li class="item-barra-navegacao active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#recipes">Receitas</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="botao-padrao">
+                Peça aqui
+            </button>
+
+           <!--versão mobile--> 
+
+           <button id="mobile_botao">
+            <i class="fa-solid fa-bars"></i>
+           </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_lista_barra_nav">
+                <li class="item-barra-navegacao">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="item-barra-navegacao">
+                    <a href="#recipes">Receitas</a>
+                </li>
+            </ul>
+
+            <button class="botao-padrao">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="call_to_action">
+                <h1 class="titulo">
+                    Desperte seus sentidos. Experimente o <span id="cta_palavra">futuro</span> do café.
+                </h1>
+
+                <p class="descricao">
+                    Venha participar dessa revolução sensorial e torne-se parte do nosso experimento contínuo de excelência.
+                </p>
+                
+                <div id="cta_botoes">
+                    <a href="" class="botao-padrao">
+                        Ver cardápio
+                    </a>
+
+                    <a href="tel:+555555555555" id="phone_number">
+                        <button class="botao-padrao">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (81)98760-4567
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            
+            </div>
+
+            <div id="banner">
+                <div class="imagens">
+                    <img src="/assets/cup-coffee-coffee-beans.jpg" alt="close up coffee beans">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="titulo-sessao">Cardápio</h2>
+            <h3 class="subtitulo-sessao">A tradição do café, elevada a um novo nível</h3>
+
+            <div id="bebidas">
+                <div class="cafes">
+                    <div class="coracao-icone">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/assets/cafe1.png" class="cafe-imagem" alt="">
+                    <h3 class="titulo-cafe">Cinnamon Latte</h3>
+                    <span class="cafe-descricao">
+                        Espresso e leite aveludado, combinado suavemente pela canela moída na hora.
+                    </span>
+                    <div class="cafe-nota">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="cafe-preco">
+                        <h4>R$12,99</h4>
+                        <button class="botao-padrao">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cafes">
+                    <div class="coracao-icone">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/assets/cafe2.png" class="cafe-imagem" alt="">
+                    <h3 class="titulo-cafe">Mocha Coffee</h3>
+                    <span class="cafe-descricao">
+                        Espresso intenso e chocolate amargo, equilibrados com leite vaporizado.
+                    </span>
+                    <div class="cafe-nota">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="cafe-preco">
+                        <h4>R$17,90</h4>
+                        <button class="botao-padrao">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cafes">
+                    <div class="coracao-icone">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/assets/cafe3.png" class="cafe-imagem" alt="">
+                    <h3 class="titulo-cafe">Orange Cold Brew</h3>
+                    <span class="cafe-descricao">
+                        Infusão de café cold brew, com notas cítricas vibrantes de laranja.
+                    </span>
+                    <div class="cafe-nota">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="cafe-preco">
+                        <h4>R$14,50</h4>
+                        <button class="botao-padrao">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cafes">
+                    <div class="coracao-icone">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/assets/cafe4.png" class="cafe-imagem" alt="">
+                    <h3 class="titulo-cafe">Thai Boba Coffee</h3>
+                    <span class="cafe-descricao">
+                        Café gelado tailandês com pérolas de tapioca.
+                    </span>
+                    <div class="cafe-nota">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="cafe-preco">
+                        <h4>R$17,90</h4>
+                        <button class="botao-padrao">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="receitas">
+            <div id="cabecalho_receitas">
+                <span class="pre-titulo"> Receitas</span>
+                <h2 class="titulo-sessao"> Descubra os segredos do café</h2>
+                <p class="subtitulo-card">Dê uma olhada nas receitas mais amadas</p>
+            </div>
+
+            <div id="cards_container">
+                <div class="card">
+                    <div class="header-card">
+                        <div class="lado-esquerdo">
+                            <span class="pretitulo-card">em alta</span>
+                            <h3 class="titulo-card">Capuccino</h3>
+                        </div>
+
+                        <div class="lado-direito">
+                            <p class="nota-card">Aconchegante | 4/5</p>
+                        </div>
+                    </div>
+
+                    <div class="descricao-container">
+                        <p class="texto-card">"Uma bebida para os amantes de doce"</p>  
+                    </div>
+
+                    <div class="autor">
+                        <img src="/assets/autor1.jpg" class="imagem-autor" alt="">
+                        <span class="nome-autor">Carolina Souza</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header-card">
+                        <div class="lado-esquerdo">
+                            <span class="pretitulo-card">em alta</span>
+                            <h3 class="titulo-card">Americano</h3>
+                        </div>
+
+                        <div class="lado-direito">
+                            <p class="nota-card">Intenso | 3.8/5</p>
+                        </div>
+                    </div>
+
+                    <div class="descricao-container">
+                        <p class="texto-card">"Bom para quem gosta do sabor puro do café."</p>  
+                    </div>
+
+                    <div class="autor">
+                        <img src="/assets/auto2.jpg" class="imagem-autor" alt="">
+                        <span class="nome-autor">Pedro Henrique</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header-card">
+                        <div class="lado-esquerdo">
+                            <span class="pretitulo-card">em alta</span>
+                            <h3 class="titulo-card">Flat White</h3>
+                        </div>
+
+                        <div class="lado-direito">
+                            <p class="nota-card">Cremoso | 5/5</p>
+                        </div>
+                    </div>
+
+                    <div class="descricao-container">
+                        <p class="texto-card">"A espuma macia faz toda a diferença."</p>  
+                    </div>
+
+                    <div class="autor">
+                        <img src="/assets/autor3.jpg" class="imagem-autor" alt="">
+                        <span class="nome-autor">Laura Rodrigues</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header-card">
+                        <div class="lado-esquerdo">
+                            <span class="pretitulo-card">em alta</span>
+                            <h3 class="titulo-card">Café Turco</h3>
+                        </div>
+
+                        <div class="lado-direito">
+                            <p class="nota-card">Extraordinário | 4.5/5</p>
+                        </div>
+                    </div>
+
+                    <div class="descricao-container">
+                        <p class="texto-card">"Para quem aprecia um café com personalidade."</p>  
+                    </div>
+
+                    <div class="autor">
+                        <img src="/assets/autor4.jpg" class="imagem-autor" alt="">
+                        <span class="nome-autor">Isabela Santos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes">
+            <img src="/assets/avaliacoes-imagem.jpg" class="imagem-avaliacoes" alt="coffe lab">
+
+            <div id="avaliacoes_container">
+                <h2 class="titulo-sessao">Avaliações</h2>
+                <p class="subtitulo-card">O que os clientes falam de nós</p>
+
+                <div id="feedbacks_container">
+                    <div class="feedback-card">
+                        <img src="/assets/avaliacao-avatar1.jpg" class="imagem-autor" alt="">
+
+                        <div id="feedback_content">
+                            <p>
+                                Rafaela Bezerra
+                            <span class="nota-avaliacoes">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            </p>
+                            <span class="comentario-avaliacoes">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis"
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <img src="/assets/avaliacao-avatar2.jpg" class="imagem-autor" alt="">
+
+                        <div id="feedback_content">
+                            <p>
+                                Rafaela Bezerra
+                            <span class="nota-avaliacoes">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            </p>
+                            <span class="comentario-avaliacoes">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis"
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <img src="/assets/avaliacao-avatar3.jpg" class="imagem-autor" alt="">
+
+                        <div id="feedback_content">
+                            <p>
+                                Rafaela Bezerra
+                            <span class="nota-avaliacoes">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            </p>
+                            <span class="comentario-avaliacoes">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis"
+                            </span>
+                        </div>
+                    </div>
+
+                    <button class="botao-padrao">Ver mais avaliações</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="/assets/wave.svg" class="wave-footer" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+               &copy 2025 Josevan Tavares
+            </span>
+
+            <div class="social-media">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
