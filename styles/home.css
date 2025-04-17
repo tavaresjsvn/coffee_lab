@@ -12,6 +12,7 @@
     flex-direction: column;
     margin-top: 5%;
     gap: 1rem;
+    z-index: 2;
 }
 
 #call_to_action .titulo {
